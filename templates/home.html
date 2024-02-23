@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="{% static 'assets/home.png' %}">
+    
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            color:white;
+            background-color: #6c1212;
+            line-height: 80px;
+            text-align: center;
+            font-size: 40px;
+        }
+        h1:hover{
+            background-color: aqua;
+        }
+        body{
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<h1>HOMEPAGE</h1>
+<link rel="stylesheet" href="">
+<a class="btn btn-outline-secondary" href="{% url 'about' %}">About</a>
+<a class="btn btn-outline-primary" href="{% url 'form' %}">Form</a>
+<a class="btn bg-danger" href="{% url 'homepage' %}">Home</a>
+
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, assumenda debitis distinctio dolore dolores doloribus eos est iste iure libero perferendis perspiciatis possimus quam quia, quisquam repellat repellendus, temporibus voluptates!</span><span>A ad, amet atque cumque deserunt dignissimos ducimus error est illum laboriosam magni maxime minima nihil nostrum optio possimus quam rem repudiandae sunt tempore vel vitae voluptatibus voluptatum. Facere, id?</span><span>Ab accusamus aliquid aperiam architecto atque beatae blanditiis consectetur cum cupiditate dolore dolorem ducimus facere facilis, ipsa iure iusto libero minus, modi nesciunt numquam obcaecati, quae quidem repudiandae rerum temporibus.</span></p>
+<img src="{% static 'assets/mount.jpeg' %}" alt="">
+<img src="{% static 'assets/herb.jpeg' %}" alt="">
+<img src="{% static 'assets/hd.jpeg' %}" alt="">
+</body>
+</html>
